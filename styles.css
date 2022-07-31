@@ -1,0 +1,318 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+
+}
+body {
+    background-color: white;
+    display:flex; 
+    flex-direction:column;
+    width: 100%;
+    height: 100%;
+    /* The two lines below makes the footer cover 100% of the width and height */
+    margin: 0px;
+    padding:0px;
+  
+}
+
+header {
+    display: flex;
+    border-bottom: 1px solid black;    
+    position: fixed;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    height: 7rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background-color: white;
+    
+}
+/* 
+header span{
+    display: flex;
+    justify-content: center;
+}  */
+
+
+header img {
+    margin-left: 0.625rem;
+    align-items: center;
+    margin-top: 0.625x;
+    justify-content: left;
+    align-content: flex-start;
+    width: 6.25rem;
+    height: 6.25rem;
+
+}
+header a{
+    text-decoration: none;
+    text-align: right;
+    color:black;
+    font-size: 1.125rem;
+
+}
+
+
+header a:hover{
+    text-decoration: underline;
+}
+
+
+header li{
+    display: inline-flex;
+    margin: 0.25rem;
+    padding: 0.625rem;
+}
+
+header nav {
+    display: flex;
+    text-align: right;
+    float: right;
+    justify-content: right;
+    align-content: flex-end;
+    margin-right: 1.125rem;
+    align-items: center;
+
+}
+
+#imagem-logo{
+    justify-content: left;
+    width: 8rem;
+    height: auto;
+    margin-right: 10rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    border-bottom: 1px solid black;    
+
+
+ }
+#header-details{
+    display: inline-flex;
+    justify-content: space-between;
+} 
+
+.home {
+    width: 100%;
+    margin-top: 7.25rem;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+ 
+.about {
+    width: 100%;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+} 
+
+section{
+    width: 50%;
+    height: auto;
+    margin-left: 0.1rem;
+    margin-left: 0.1rem;
+}
+
+.box{
+    width: 37.5rem;
+    max-height: 37.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0.01rem;
+    justify-content: center;
+    text-align: center;
+}
+.box img{
+    max-width: 37.5rem;
+    height: inherit;
+    max-height: 100%;
+}
+.box h1{
+    font-size: 2.875rem;
+}
+
+.box h2, .box h3 {
+    text-align: left;
+    align-self: flex-start;
+}
+
+.box.right h2, .box.right h3 {
+    margin-left: 2rem;
+
+}
+
+.box.left h2, .box.left h3 {
+    margin-right: 2rem;
+
+}
+.box h2{
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+.box h2 strong{
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+
+.box h3{
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.box small {
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+.gallery {
+    width: 100%;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+} 
+
+footer{
+    min-width:100%;
+    max-height:100%;
+    height:auto;
+    background-color: #e4bcad;
+    bottom: 0;
+    margin: 0; 
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+ footer div.contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div div.hours{
+    margin-right: 5rem;
+}
+
+
+footer h4{
+    font-weight: 400;
+}
+footer span.inline-number{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+footer img{
+    width: 50%;
+    height: auto;
+}
+
+footer p{
+    text-align: center;
+}
+
+a.anchor{
+    scroll-margin-top: 20px;
+
+}
+
+
+@media screen and (max-width: 1220px) {
+    .home{
+        flex-direction: column;
+    }
+    .box{
+        max-width: 37.5rem;
+
+        width: 100%;
+
+    }
+    .pic{
+        order:2;
+    }
+    img{
+        width: 100%;
+        /* object-fit: cover; */
+    }
+    main section div.text {
+        order:1;
+        padding: 0 0 !important;
+        text-align: center;
+        align-content: center;
+
+    }
+
+    .box.left, .box.right{
+        margin: 1rem;
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+    
+    .box.right h1, .box.right h2, .box.right h3 {
+        margin-left: 0;
+    }
+
+    .text h1, .text h2, .text h3{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .box.left h1, .box.left h2, .box.left h3 {
+        margin-right: 0;
+    }
+
+    footer img{
+        width: 80%;
+    }
+
+    footer p{
+        font-size: 0.75rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box.left img, .box.right img{
+        max-width: 100%;
+        width: cover;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .box.left, .box.right{
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0;
+    }
+
+    div.text h1, div.text h2, div.text h3{
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+
+    }
+}
